@@ -1,0 +1,108 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+	text-decoration:none;
+	list-style:none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+	background-image: url('d.k.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover; /* Cover the entire background */
+            margin: 0; /* Remove default margin */
+            padding: 0;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: brown;
+    color: #ffae00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Toggle Button */
+.nav-toggle-label {
+    cursor: pointer;
+    display: none;
+}
+
+.nav-toggle-label span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .nav-toggle-label {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .menu li {
+        margin-right: 0;
+    }
+
+    .menu li a {
+        padding: 10px 20px;
+        display: block;
+    }
+
+    #nav-toggle:checked + .nav-toggle-label + .menu {
+        display: flex;
+    }
+	
+#check{
+display:none;
+}
+.container {
+    text-align: Center; /* Center horizontally */
+    height: 700px; /* Example height, adjust as needed */
+    display: flex;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center vertically */
+}
+.menu li a{
+	color:white;
+	font-size:17px;
+	text-transform:Uppercase;
+}
+
+}
+
